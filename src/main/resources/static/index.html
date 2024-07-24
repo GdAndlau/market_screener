@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Main page</title>
+</head>
+<body>
+<div class="container my-2" align="center">
+    <h1>This is a stock market screener</h1>
+    <p> You should find in rather easy to use. or?</p>
+</div>
+
+<!--The th:action="@{/greeting}" expression directs the form to POST to the /greeting endpoint,
+while the th:object="${greeting}"
+expression declares the model object to use for collecting the form data.
+The two form fields, expressed with th:field="*{id}" and th:field="*{content}",
+correspond to the fields in the Greeting object.-->
+
+<div class="input-info">
+    <h2>Please select the information for the stock you are looking for:</h2>
+        <div class="market-value">
+            <form th:object="${}" th:action="@{}" method="get">
+                <input type="number" id="" name="" th:value="*{value}"/>
+                <input type="submit" value="Add" />
+                <input type="reset" value="Reset" />
+            </form>
+        </div>
+</div>
+
+</body>
+</html>
