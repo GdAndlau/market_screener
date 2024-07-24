@@ -20,6 +20,7 @@ correspond to the fields in the Greeting object.-->
 <div class="input-info">
     <h2>Please select the information for the stock you are looking for:</h2>
         <div class="market-value">
+            <h3>Maybe start with a market capitalisation?</h3>
             <form th:object="${}" th:action="@{}" method="get">
                 <input type="number" id="" name="" th:value="*{value}"/>
                 <input type="submit" value="Add" />
@@ -27,6 +28,10 @@ correspond to the fields in the Greeting object.-->
             </form>
         </div>
     <p></p>
+</div>
+
+<div class="input-info">
+    <h2>Here you can find the stocks corresponding to your search</h2>
 </div>
 
 </body>
